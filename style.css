@@ -1,0 +1,211 @@
+   button {
+
+       border-radius: 30px;
+       color: rgb(0, 0, 0);
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 15px;
+       width: 40%;
+       height: 3%;
+
+
+   }
+
+
+
+
+   
+   .otherimage {
+       height: 50px;
+       width: 75px;
+       display: flex;
+
+       position: absolute;
+       top: 7%;
+       left: 7%;
+   }
+
+   button:hover::after {
+       content: "->";
+   }
+
+
+
+   h1 {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 100%;
+   }
+
+   h2 {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 80%;
+   }
+
+   .c1 {
+       display: flex;
+       justify-content: center;
+       margin: 2%;
+       margin-left: 10%;
+   }
+
+   .txt {
+       display: flex;
+       flex-direction: column;
+       margin-right: 20%;
+       margin-left: 10%;
+       width: 30%;
+
+   }
+
+   img {
+    height: 60%;
+    width: 30%;
+    border-style: ridge;
+    border-color: black;
+}
+
+
+   .navup {
+       display: flex;
+       justify-content: center;
+       background-color: black;
+       width: 100%;
+
+
+   }
+
+   a {
+       margin: 50px;
+       font-size: 100%;
+       color: rgb(255, 255, 255);
+       font-family: Arial, Helvetica, sans-serif;
+       text-decoration: none;
+   }
+
+   a:hover {
+
+       color: deeppink;
+
+   }
+
+   .all {
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+
+
+
+   }
+
+   .icon {
+       display: flex;
+       justify-content: center;
+   }
+
+
+   .hamburger {
+       cursor: pointer;
+       width: 30px;
+       height: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       position: fixed;
+       top: 10px;
+       right: 10px;
+   }
+
+   .bar {
+       width: 100%;
+       height: 4px;
+       background-color: black;
+       display: none;
+   }
+
+   /* תפריט נסתר בהתחלה */
+   .menu {
+       display: none;
+       margin-top: 10px;
+       border: 1px solid #000;
+       padding: 10px;
+       width: 100px;
+       height: 100%;
+       background-color: #000000;
+       position: fixed;
+       /* התפריט יישאר גם כן במקום קבוע */
+       right: 10px;
+       /* מיקום בצד ימין */
+       top: 50px;
+       /* מתחת לכפתור ההמבורגר */
+
+   }
+
+   /* תפריט גלוי */
+   .menu.show {
+       display: block;
+   }
+
+
+
+   /* עיצוב הפוטר */
+   footer {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 20px;
+       background-color: #333;
+   }
+
+   /* עיצוב לאייקונים */
+   .footer-icons a {
+       margin: 0 10px;
+       font-size: 30px;
+       color: white;
+       transition: color 0.3s ease;
+   }
+
+   /* שינוי צבע במעבר עכבר */
+   .footer-icons a:hover {
+       color: #00aced;
+       /* צבע משתנה */
+   }
+
+
+
+   @media only screen and (max-width: 600px) {
+
+       /* .all {
+           display: flex;
+           /* flex-direction: row; */
+       */ body {
+           background-color: lightblue;
+       }
+
+       .bar {
+           display: block;
+       }
+
+
+        .navup {
+           display: none;
+
+       } 
+
+       .c1 {
+           display: flex;
+           justify-content: center;
+       }
+
+       h1 {
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 10px;
+       }
+
+       h2 {
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 5px;
+       }
+  
+   }
